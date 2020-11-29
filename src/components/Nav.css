@@ -1,0 +1,48 @@
+nav {
+   padding: 1em 0 0;
+}
+
+nav > .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+nav h1 {
+   font-family: 'Nunito', 'Montserrat', Arial, sans-serif;
+   font-weight: 900;
+   font-size: 1.2em;
+   transition: all .2s;
+}
+
+.brand:hover {
+   transform: translateY(-2px);
+   text-shadow: var(--shadow);
+}
+
+.brand a:focus {
+   text-shadow: var(--shadow), var(--shadow);
+   /* Sombra doble para que se distinga mejor navegando con Tab */
+}
+
+.brand a:active {
+   opacity: 0.5;
+   outline: none;
+}
+
+@media screen and (max-width: 700px) {
+   nav {
+      padding-bottom: 2em;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+   }
+   nav .container {
+      flex-direction: column;
+   }
+
+   nav h1 {
+      margin-bottom: 1rem;
+   }
+}

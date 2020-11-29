@@ -1,0 +1,5 @@
+.app {
+   position: relative;
+   z-index: 2;
+   /* Para que no haya conflictos con la semitransparencia de #root en index.css */
+}
